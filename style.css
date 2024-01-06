@@ -3,12 +3,14 @@
 }
 #back{
     text-decoration: none;
-    color: black;
+    color: rgb(44, 30, 30);
 }
 .conteudo{
     border: 2%;
-    border-color: black;
+    border-color: whitesmoke;
     border-style: ridge;
+    color: aliceblue;
+    background-color: rgb(20, 16, 16);;
 }
 .rodape{
 
