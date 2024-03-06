@@ -3,7 +3,8 @@
 typedef struct peca{
     int vazio;
     int b;
-    int p;
+    int tipo;
+
 }peca;
 typedef struct jogo{
     peca tabuleiro[8][8];
@@ -16,7 +17,12 @@ jogo start(){
     for(int i=0; i < 8; i++){
         if(i == 0 || i == 1 || i == 6 || i == 7 ){
             for( int j = 0 ; j < 8 ; j++ ){
-                init.
+                init.tabuleiro[i][j]->vazio=0;
+                if(i < 2){
+                    init.tabuleiro[i][j]->b = 1;
+                }else{
+                    init.tabuleiro[i][j]->b = 0;
+                }
             }
         }
         
